@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  body.loaded {
+    opacity: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: blueviolet;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    color: red;
+    font-size: 1.04rem;
+  }
+  
+  .about-me-container {
+    max-width: 80vw;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  .about-me-container h1,
+  .about-me-container h2 {
+    font-size: 2rem;
+    color: aqua;
+    margin-bottom: 15px;
+  }
+  
+  .about-me-container p,
+  .about-me-container ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .about-me-container ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #0e0e1a;
+    padding: 40px 0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+    opacity: 0.95;
+  }
+  
+  .project-link {
+    display: inline-block;
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #00ced1;
+  }
+  
+  /* Slideshow */
+  .slideshow {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .slide-img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .slide-img:hover {
+    transform: scale(1.05);
+  }
+  
